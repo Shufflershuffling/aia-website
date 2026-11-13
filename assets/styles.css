@@ -1,4 +1,5 @@
 
+
 :root {
   --ink:#102F34; --near:#111416; --teal:#02BDBD; --deep:#0B5E6F;
   --amber:#E8923A; --cream:#F7F3EA; --paper:#FFFDF8; --sage:#DCE7DF;
@@ -1251,4 +1252,69 @@ header.wrap .hero-flow picture img{width:100%;height:100%;display:block;object-f
 @media(max-width:390px){
  header.wrap .hero{padding-bottom:108px!important}
  header.wrap .hero .hero-flow{height:230px!important}
+}
+
+/* Review V12: compact supporting descriptions for the four existing themes */
+#action .theme-grid .theme-editorial{display:flex!important;flex-wrap:wrap!important;align-content:flex-start!important;align-items:flex-start!important;min-height:190px!important;column-gap:9px!important;row-gap:0!important;padding-bottom:20px!important;}
+#action .theme-grid .theme-editorial .theme-index{margin-left:auto!important;}
+#action .theme-grid .theme-editorial .theme-detail{flex:0 0 100%;width:100%;margin-top:10px;max-width:38ch;}
+#action .theme-grid .theme-editorial .theme-detail p{font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:1.48!important;font-weight:400!important;letter-spacing:0!important;margin:0 0 7px!important;text-transform:none!important;}
+#action .theme-grid .theme-editorial .theme-detail .theme-description{color:#344B50!important;}
+#action .theme-grid .theme-editorial .theme-detail .theme-example{color:#61747A!important;font-style:italic;}
+@media(max-width:700px){#action .theme-grid .theme-editorial{min-height:0!important;padding:20px 0!important;}#action .theme-grid .theme-editorial .theme-detail{max-width:100%;}}
+
+
+/* V13: Four themes — unified editorial cards, responsive and readable */
+#action .theme-grid {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;align-items:stretch!important;min-width:0!important;}
+#action .theme-grid .theme-editorial,#action .theme-grid .theme-editorial:nth-child(odd),#action .theme-grid .theme-editorial:nth-child(even){box-sizing:border-box!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;flex-wrap:nowrap!important;gap:0!important;border:1px solid #d6e5e2!important;border-radius:16px!important;background:#fbfcfa!important;padding:22px 22px 20px!important;margin:0!important;min-height:240px!important;min-width:0!important;height:auto!important;font-size:inherit!important;line-height:normal!important;box-shadow:0 2px 12px rgba(13,76,84,.035)!important;}
+#action .theme-grid .theme-editorial:after{display:none!important;}
+#action .theme-grid .theme-heading{display:flex!important;align-items:center!important;gap:11px!important;width:100%!important;margin-bottom:14px!important;}
+#action .theme-grid .theme-symbol{display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 34px!important;width:34px!important;height:34px!important;background:#e7f3f0!important;border-radius:50%!important;font-family:Arial,sans-serif!important;font-size:21px!important;color:#008c90!important;line-height:1!important;}
+#action .theme-grid .theme-name{font-family:Georgia,serif!important;color:#073f48!important;font-size:clamp(1.6rem,2.2vw,2.1rem)!important;line-height:1.1!important;letter-spacing:-.025em!important;}
+#action .theme-grid .theme-editorial .theme-index{font-family:Arial,sans-serif!important;margin-left:auto!important;color:#789397!important;font-size:11px!important;letter-spacing:.12em!important;}
+#action .theme-grid .theme-editorial .theme-detail{flex:1 1 auto!important;display:flex!important;flex-direction:column!important;width:100%!important;max-width:none!important;min-width:0!important;margin:0!important;gap:13px!important;}
+#action .theme-grid .theme-editorial .theme-detail p{font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(13px,1.1vw,15px)!important;line-height:1.6!important;letter-spacing:normal!important;overflow-wrap:break-word!important;word-break:normal!important;hyphens:none!important;margin:0!important;}
+#action .theme-grid .theme-editorial .theme-detail .theme-description{color:#314c51!important;font-style:normal!important;}
+#action .theme-grid .theme-editorial .theme-detail .theme-example{border-top:1px solid #dbe8e4!important;padding-top:12px!important;margin-top:auto!important;color:#52696c!important;font-style:normal!important;}
+#action .theme-grid .theme-editorial .theme-detail .theme-example:before{content:'IN PRACTICE';display:block;color:#087b80;font-family:Arial,sans-serif;font-size:10px;letter-spacing:.13em;font-weight:700;margin-bottom:5px;}
+@media(max-width:1050px){#action .theme-grid{gap:12px!important}#action .theme-grid .theme-editorial{padding:18px!important;min-height:260px!important}}
+@media(max-width:700px){#action .theme-grid{grid-template-columns:minmax(0,1fr)!important;gap:14px!important}#action .theme-grid .theme-editorial,#action .theme-grid .theme-editorial:nth-child(odd),#action .theme-grid .theme-editorial:nth-child(even){min-height:0!important;padding:20px!important}#action .theme-grid .theme-name{font-size:1.85rem!important}#action .theme-grid .theme-editorial .theme-detail p{font-size:15px!important;line-height:1.55!important}#action .theme-grid .theme-editorial .theme-detail{gap:12px!important}}
+
+/* V14: balanced full-width opportunity themes on desktop; preserve mobile cards */
+@media (min-width:701px){
+ #action .explore-row{display:block!important;padding-top:58px!important;margin-top:42px!important;}
+ #action .explore-row > div:first-child{max-width:780px!important;margin:0 0 32px!important;}
+ #action .explore-row > div:first-child h3{max-width:760px!important;}
+ #action .explore-row > div:first-child p{max-width:710px!important;}
+ #action .theme-grid{width:100%!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;margin-top:0!important;}
+ #action .theme-grid .theme-editorial{min-height:255px!important;}
+}
+@media (min-width:1160px){
+ #action .theme-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important;}
+ #action .theme-grid .theme-editorial{padding:20px 17px!important;min-height:300px!important;}
+ #action .theme-grid .theme-name{font-size:clamp(1.55rem,2vw,1.95rem)!important;}
+ #action .theme-grid .theme-heading{gap:7px!important;}
+ #action .theme-grid .theme-symbol{flex-basis:30px!important;width:30px!important;height:30px!important;}
+ #action .theme-grid .theme-editorial .theme-detail p{font-size:14px!important;}
+}
+
+
+/* V15: remove unintended rule and prevent theme heading/index collisions */
+#action .explore-row{border-top:0!important;}
+#action .theme-grid .theme-editorial{position:relative!important;overflow:hidden!important;}
+#action .theme-grid .theme-heading{position:relative!important;min-width:0!important;box-sizing:border-box!important;padding:10px 10px!important;gap:9px!important;}
+#action .theme-grid .theme-name{display:block!important;min-width:0!important;max-width:100%!important;white-space:normal!important;overflow-wrap:normal!important;font-size:clamp(1.35rem,1.65vw,1.75rem)!important;line-height:1.12!important;letter-spacing:-.035em!important;}
+#action .theme-grid .theme-editorial .theme-index{position:absolute!important;top:8px!important;right:9px!important;margin:0!important;font-size:10px!important;line-height:1!important;}
+@media(min-width:1160px){
+ #action .theme-grid .theme-heading{padding:17px 6px 9px!important;}
+ #action .theme-grid .theme-symbol{flex:0 0 27px!important;width:27px!important;height:27px!important;font-size:18px!important;}
+ #action .theme-grid .theme-name{font-size:clamp(1.35rem,1.65vw,1.7rem)!important;}
+}
+@media(max-width:700px){#action .theme-grid .theme-heading{padding:12px 10px!important;}#action .theme-grid .theme-name{font-size:1.85rem!important;}}
+
+
+/* V16: align the IN PRACTICE dividers across all four desktop cards. */
+@media (min-width:1160px){
+ #action .theme-grid .theme-editorial .theme-detail .theme-description{min-height:112px!important;}
+ #action .theme-grid .theme-editorial .theme-detail .theme-example{margin-top:0!important;}
 }
