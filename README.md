@@ -1,46 +1,18 @@
-# Alliance Institute Australia — Website
+# Alliance Institute Australia — V16 production release
 
-Production-ready static website prepared from the approved v11.3 design.
-All site images, CSS and JavaScript are included locally. No build command or hosting framework is required.
+Deploy the CONTENTS of this directory to the GitHub Pages repository root (not the ZIP file). Keep the `assets/` directory intact.
 
-## Publish with GitHub Pages
+Domain: https://allianceia.com.au/ (the CNAME file retains the custom domain).
 
-1. Create a GitHub repository (for example, `aia-website`).
-2. Upload the **contents of this folder** to the repository root, keeping `index.html` and the `assets/` directory together. You can use GitHub's **Add file → Upload files**.
-3. Commit the files to the `main` branch.
-4. In repository **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/(root)` and save.
-5. GitHub will display the live Pages URL after deployment. It may take a few minutes.
-6. If you later use a custom domain, configure it in **Settings → Pages** and update your DNS as GitHub instructs. Enable HTTPS when available.
+Includes approved V16 four-theme alignment, full responsive homepage, original site images, favicon and Apple touch icon, Open Graph / social preview image, canonical URL, meta description, sitemap.xml and robots.txt.
 
-## Included files
+Before uploading, back up the existing repository and preserve any other files or workflows you still need. Confirm GitHub Pages Settings > Pages points to the correct branch and root.
 
-- `index.html` — homepage with all agreed content and links
-- `assets/styles.css` — responsive styling
-- `assets/site.js` — mobile menu and lightweight visual behaviour
-- `assets/*.png`, `assets/*.jpg` — original site imagery and logos extracted from v11.3
-- `.nojekyll` — prevents Jekyll processing
-- `robots.txt` — permits search engine crawling
+After deployment:
+1. Open https://allianceia.com.au/ in an incognito window and inspect mobile and desktop.
+2. Verify https://allianceia.com.au/assets/social-preview.jpg, /robots.txt and /sitemap.xml load.
+3. In Google Search Console verify the domain, use URL Inspection > Test Live URL > Request Indexing for https://allianceia.com.au/, and submit sitemap.xml.
+4. Check previously indexed old paths and use appropriate redirects or 404/410 responses; GitHub Pages does not natively provide server-side 301 redirects.
+5. Recheck LinkedIn sharing previews after publishing. Google controls final snippets and indexing timing.
 
-## Confirmed links retained
-
-- Li Si Wong: https://www.linkedin.com/in/lisiwong/
-- Dr Lillian Koh: https://www.linkedin.com/in/dr-lillian-koh-a9299b280/
-- Brian Tucker: https://www.linkedin.com/in/brian-tucker-a0374a33/
-- Aus–Asia Connect LinkedIn: https://www.linkedin.com/company/australiaasiaconnect
-- Aus–Asia Connect: https://ausasiaconnect.com/
-- Wade VC Catalyst: https://wadeinstitute.org.au/programs/investors/vc-catalyst/
-- Contact: mailto:lisi@ausasiaconnect.com
-
-## Before public launch
-
-- Confirm the contact email above is the desired public enquiry address.
-- Review image permissions, logo use and institutional wording.
-- Test on your actual phone and on desktop after publishing.
-- Consider adding a privacy policy if you later use analytics, forms, or tracking cookies.
-- This is a static site: the contact link opens the visitor's email app; no backend form is provided.
-- The site's font stack uses locally available system fallbacks where webfonts are not installed; no external font service is required.
-
-## Editing
-
-Edit `index.html` for copy and links, and `assets/styles.css` for styling.
-Preserve relative paths so the website works on both GitHub Pages project URLs and custom domains.
+This package does not deploy the site or change Google Search Console automatically.
