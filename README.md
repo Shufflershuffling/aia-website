@@ -1,18 +1,23 @@
-# Alliance Institute Australia — V16 production release
+# Alliance Institute Australia — V27 production package
 
-Deploy the CONTENTS of this directory to the GitHub Pages repository root (not the ZIP file). Keep the `assets/` directory intact.
+This package is ready for GitHub Pages on **allianceia.com.au**.
 
-Domain: https://allianceia.com.au/ (the CNAME file retains the custom domain).
+## Upload
 
-Includes approved V16 four-theme alignment, full responsive homepage, original site images, favicon and Apple touch icon, Open Graph / social preview image, canonical URL, meta description, sitemap.xml and robots.txt.
+Upload the **contents** of this folder to the root of the existing GitHub Pages publishing branch (usually `main`), preserving the `assets/` folder. Replace the old `index.html`. Do not upload the outer folder itself. Leave any unrelated repository configuration files in place.
 
-Before uploading, back up the existing repository and preserve any other files or workflows you still need. Confirm GitHub Pages Settings > Pages points to the correct branch and root.
+Files:
+- `index.html` — approved V27 website, with embedded images and styling
+- `assets/site.js` — mobile navigation behaviour referenced by the HTML
+- `social-preview.jpg` — 1200 × 630 social sharing image
+- `CNAME` — custom domain `allianceia.com.au`
 
-After deployment:
-1. Open https://allianceia.com.au/ in an incognito window and inspect mobile and desktop.
-2. Verify https://allianceia.com.au/assets/social-preview.jpg, /robots.txt and /sitemap.xml load.
-3. In Google Search Console verify the domain, use URL Inspection > Test Live URL > Request Indexing for https://allianceia.com.au/, and submit sitemap.xml.
-4. Check previously indexed old paths and use appropriate redirects or 404/410 responses; GitHub Pages does not natively provide server-side 301 redirects.
-5. Recheck LinkedIn sharing previews after publishing. Google controls final snippets and indexing timing.
+## Before / after publication
 
-This package does not deploy the site or change Google Search Console automatically.
+1. Confirm the repository's GitHub Pages source is the branch/root where these files are uploaded.
+2. Keep the existing DNS records and GitHub Pages custom domain; **do not change DNS** as part of this upload.
+3. After publishing, open `https://allianceia.com.au/` on desktop and mobile. Check the mobile menu, all navigation anchors, and `Get in touch` mailto link.
+4. Check `https://allianceia.com.au/social-preview.jpg` loads as an image. LinkedIn and other platforms may cache an older preview; use their sharing debugger/inspector to refresh after publication.
+5. Confirm the GitHub Pages HTTPS certificate is valid.
+
+No live website, repository or DNS changes were made while preparing this package.
