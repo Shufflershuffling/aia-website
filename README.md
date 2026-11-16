@@ -1,23 +1,17 @@
-# Alliance Institute Australia — V27 production package
+# Alliance Institute Australia — V28 GitHub Pages production files
 
-This package is ready for GitHub Pages on **allianceia.com.au**.
+Approved V28 site based on the final AIA × WADE COLLABORATION review version, with the previously approved AIA contact email and Docklands address retained.
 
-## Upload
+## Deploy
+Upload the **contents** of this folder to the root of the GitHub Pages publishing branch, preserving `assets/site.js`. Replace `index.html` and `social-preview.jpg`; keep the `CNAME` custom-domain file. Do not upload the outer folder itself. Keep any other repository settings/files intact.
 
-Upload the **contents** of this folder to the root of the existing GitHub Pages publishing branch (usually `main`), preserving the `assets/` folder. Replace the old `index.html`. Do not upload the outer folder itself. Leave any unrelated repository configuration files in place.
+Do not modify DNS. Confirm GitHub Pages is publishing from the correct branch and root folder.
 
-Files:
-- `index.html` — approved V27 website, with embedded images and styling
-- `assets/site.js` — mobile navigation behaviour referenced by the HTML
-- `social-preview.jpg` — 1200 × 630 social sharing image
-- `CNAME` — custom domain `allianceia.com.au`
+## Verify after deployment
+- Open https://allianceia.com.au/ on desktop and mobile, and test the mobile menu.
+- Test Get in touch: `lisi@allianceia.com.au`.
+- Confirm the footer address appears correctly.
+- Check the AIA × WADE COLLABORATION label and Bangkok keynote wording.
+- Open https://allianceia.com.au/social-preview.jpg and inspect LinkedIn sharing metadata.
 
-## Before / after publication
-
-1. Confirm the repository's GitHub Pages source is the branch/root where these files are uploaded.
-2. Keep the existing DNS records and GitHub Pages custom domain; **do not change DNS** as part of this upload.
-3. After publishing, open `https://allianceia.com.au/` on desktop and mobile. Check the mobile menu, all navigation anchors, and `Get in touch` mailto link.
-4. Check `https://allianceia.com.au/social-preview.jpg` loads as an image. LinkedIn and other platforms may cache an older preview; use their sharing debugger/inspector to refresh after publication.
-5. Confirm the GitHub Pages HTTPS certificate is valid.
-
-No live website, repository or DNS changes were made while preparing this package.
+No repository, domain or live-site settings were changed by preparing these files.
